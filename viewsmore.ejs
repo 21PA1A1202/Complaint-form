@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    
+    .main {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      height: auto;
+      width: 40%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+   
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .p{
+      font-weight:600;
+    }
+    
+    a {
+      text-decoration: none; 
+      color: inherit; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main"> 
+    <div style="display:flex; flex-direction:column;">
+      <p><span>Name :</span><span class="p"> <%= data.name %></span></p>
+       <p><span>Registration :</span><span class="p"> <%= data.reg %></span></p>
+      <p><span>Branch :</span><span class="p"> <%= data.branch %></span></p>
+     <a href="/home">
+       <button>Back to Home</button>
+     </a>
+    </div>
+  </div>
+
+</body>
+</html>
